@@ -1,0 +1,18 @@
+{
+  "name": "Cpq Enhanced",
+  "version": "1.0",
+  "description": "Enhance Cpq",
+  "permissions": ["storage"],
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+        "matches": [
+            "https://sandbox.webcomcpq.com/admin/AddEditScript.aspx*"
+        ],
+        "js": [
+            "content.js"
+        ],
+        "run_at": "document_end"
+    }
+]
+}
